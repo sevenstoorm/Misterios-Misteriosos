@@ -3,6 +3,8 @@ import Footer from "./components/Footer";
 import Navbar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
 import SobrePage from "./pages/SobrePage";
+import ProdutosPage from "./pages/ProdutosPage"
+import FaqPage from "./pages/FAQ/FaqPage";
 
 import Contato from "./pages/Contato";
 function App() {
