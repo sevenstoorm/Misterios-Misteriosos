@@ -53,7 +53,7 @@ function Formulario() {
               value={formData.nome}
               onChange={handleChange}
               required
-              placeholder="Seu nome completo"
+              placeholder="Nome completo"
               className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all duration-200 bg-white text-black placeholder-gray-400"
             />
           </div>
@@ -68,7 +68,7 @@ function Formulario() {
               value={formData.email}
               onChange={handleChange}
               required
-              placeholder="seuemail@exemplo.com"
+              placeholder="cibongos@exemplo.com"
               className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all duration-200 bg-white text-black placeholder-gray-400"
             />
           </div>
@@ -83,7 +83,7 @@ function Formulario() {
               value={formData.assunto}
               onChange={handleChange}
               required
-              placeholder="Sobre o que deseja falar?"
+              placeholder="Assunto"
               className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all duration-200 bg-white text-black placeholder-gray-400"
             />
           </div>
@@ -98,7 +98,7 @@ function Formulario() {
               onChange={handleChange}
               required
               rows={5}
-              placeholder="Escreva sua mensagem aqui..."
+              placeholder="Mensagem"
               className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200 outline-none transition-all duration-200 bg-white text-black placeholder-gray-400 resize-none"
             />
           </div>
