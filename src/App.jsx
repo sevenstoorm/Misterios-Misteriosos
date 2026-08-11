@@ -4,6 +4,7 @@ import Navbar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
 import SobrePage from "./pages/SobrePage";
 
+import Contato from "./pages/Contato";
 function App() {
   return (
     <div className="min-h-screen bg-emerald-50 text-slate-900">
@@ -13,6 +14,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/sobre" element={<SobrePage />} />
+          <Route path="/produtos" element={<ProdutosPage />} />
+          <Route path="/faq" element={<FaqPage />} />
+          <Route path="/contato" element={<Contato />} />
         </Routes>
       </main>
 

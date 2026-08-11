@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import {
   FiInstagram,
   FiMail,
@@ -30,10 +31,35 @@ function Footer() {
               Navegação
             </h3>
             <ul className="space-y-2 text-sm text-slate-400">
-              <li>Home</li>
-              <li>Sobre</li>
-              <li>Produtos</li>
-              <li>FAQ</li>
+              <li>
+                <NavLink to="/" className="transition hover:text-emerald-300">
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/sobre"
+                  className="transition hover:text-emerald-300"
+                >
+                  Sobre
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/produtos"
+                  className="transition hover:text-emerald-300"
+                >
+                  Produtos
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/faq"
+                  className="transition hover:text-emerald-300"
+                >
+                  FAQ
+                </NavLink>
+              </li>
             </ul>
           </div>
 
@@ -44,11 +70,21 @@ function Footer() {
             <ul className="space-y-3 text-sm text-slate-400">
               <li className="flex items-center gap-2">
                 <FiPhone className="text-emerald-300" />
-                (11) 4002-8922
+                <a
+                  href="tel:+551140028922"
+                  className="transition hover:text-white"
+                >
+                  (11) 4002-8922
+                </a>
               </li>
               <li className="flex items-center gap-2">
                 <FiMail className="text-emerald-300" />
-                contato@nexusgames.com.br
+                <a
+                  href="mailto:contato@nexusgames.com.br"
+                  className="transition hover:text-white"
+                >
+                  contato@nexusgames.com.br
+                </a>
               </li>
               <li className="flex items-center gap-2">
                 <FiMapPin className="text-emerald-300" />
