@@ -2,6 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navbar from "./components/NavBar";
 import HomePage from "./pages/HomePage";
+import ProdutosPage from "./pages/ProdutosPage";
+import FaqPage from "./pages/FAQ/FaqPage";
+
 import Contato from "./pages/Contato";
 function App() {
   return (
@@ -11,6 +14,8 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/produtos" element={<ProdutosPage />} />
+          <Route path="/faq" element={<FaqPage />} />
           <Route path="/contato" element={<Contato />} />
         </Routes>
       </main>
