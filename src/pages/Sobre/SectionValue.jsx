@@ -1,23 +1,26 @@
+import Card from "../../components/Card";
+
 function SectionValue() {
   return (
-    <main className="w-[90%] mx-auto py-20">
-      <section className="text-center">
-        <h2 className="border-b-2 border-emerald-600 w-fit mx-auto mb-4">
-          NOSSOS VALORES
-        </h2>
+    <main className="w-[80%] mx-auto py-20 bg-emerald-50 px-6 md:px-12 lg:px-25">
+      <div className="max-w-3xl mx-auto">
+        <Card>
+          <h2 className="border-b-2 border-emerald-600 w-fit mx-auto mb-4 text-center">
+            NOSSOS VALORES
+          </h2>
 
-        <h1 className="text-[30px] font-semibold mb-5">
-          Princípios que fazem parte da nossa história
-        </h1>
+          <h1 className="text-[30px] font-semibold mb-4 text-center">
+            Princípios que fazem parte da nossa história
+          </h1>
 
-        <p className="max-w-3xl mx-auto">
-          Na Nexus, nossos valores são baseados em ética, respeito, inovação
-          e compromisso. Buscamos sempre agir com transparência e
-          responsabilidade, valorizando nossos clientes, colaboradores e
-          parceiros. Esses princípios fazem parte dos nossos 50 anos de
-          história e continuam guiando nossas decisões para o futuro.
-        </p>
-      </section>
+          <p className="text-center">
+            Na Nexus, nossos valores são baseados em ética, respeito, inovação
+            e compromisso. Agimos com transparência e responsabilidade,
+            valorizando clientes, colaboradores e parceiros. Esses princípios
+            guiam nossas decisões e ações diariamente.
+          </p>
+        </Card>
+      </div>
     </main>
   );
 }
