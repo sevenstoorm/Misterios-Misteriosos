@@ -1,4 +1,5 @@
 import { FiShoppingCart, FiStar } from "react-icons/fi";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const products = [
   {
@@ -52,6 +53,7 @@ const products = [
 ];
 
 function Cards() {
+  const navigate = useNavigate()
   return (
     <section id="produtos" className="bg-slate-900 py-16 text-white">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -103,7 +105,7 @@ function Cards() {
                   </span>
                 </div>
 
-                <button className="flex w-full items-center justify-center gap-2 rounded-full bg-emerald-400 px-4 py-3 font-semibold text-slate-950 transition hover:bg-emerald-300">
+                <button onClick={() => navigate("/*")} className="flex w-full items-center justify-center gap-2 rounded-full bg-emerald-400 px-4 py-3 font-semibold text-slate-950 transition hover:bg-emerald-300">
                   <FiShoppingCart />
                   Comprar
                 </button>
@@ -122,7 +124,7 @@ function Cards() {
           <h3 className="mt-3 text-2xl font-black">
             Combo setup gamer por R$ 2.499
           </h3>
-          <button className="mt-5 rounded-full bg-white px-5 py-3 font-bold text-emerald-800">
+          <button onClick={() => navigate("/*")} className="mt-5 rounded-full bg-white px-5 py-3 font-bold text-emerald-800">
             Aproveitar
           </button>
         </div>
