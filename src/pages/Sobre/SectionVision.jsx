@@ -1,45 +1,29 @@
-function SectionMission() {
+import Card from "../../components/Card";
+
+function SectionVision() {
   return (
-    <main className="flex items-center justify-between px-25">
+    <main className="w-[80%] mx-auto py-20 bg-emerald-50 px-6 md:px-12 lg:px-25">
+      <div className="grid lg:grid-cols-2 gap-8 items-center">
+        <Card>
+          <h2 className="border-b-2 border-emerald-600 w-fit mb-2">NOSSO GRUPO</h2>
+          <p className="mt-4">
+            O Grupo Nexus reúne empresas e talentos que atuam de forma integrada
+            para oferecer soluções completas e inovadoras. Compartilhamos
+            conhecimento, tecnologia e recursos para entregar valor escalável e
+            sustentado aos nossos clientes.
+          </p>
+        </Card>
 
-      {/* Imagens */}
-      <div className="relative w-[450px] h-[450px]">
-
-        {/* Imagem de trás */}
-        <img
-          src="/vision.jpg"
-          alt="Visão Nexus"
-          className="absolute top-0 left-0 w-65 h-80 object-cover rounded-3xl"
-        />
-
-        {/* Imagem da frente */}
-        <img
-          src="/empresa.jpg"
-          alt="Empresa Nexus"
-          className="absolute top-30 left-35 w-65 h-80 object-cover rounded-3xl"
-        />
-
+        <Card className="p-0">
+          <img
+            src="/empresa.jpg"
+            alt="Nosso Grupo"
+            className="w-full h-[320px] lg:h-[450px] object-cover rounded-2xl"
+          />
+        </Card>
       </div>
-
-      {/* Texto */}
-      <section className="mt-15 p-1 w-full flex flex-col items-end">
-        <h2 className="border-b-2 border-emerald-600 w-30 mb-2 text-right">
-          NOSSA VISÃO
-        </h2>
-
-        <p className="mt-5 mb-5 w-200 text-right">
-          Na Nexus, nossa visão é construir um futuro baseado em inovação,
-          qualidade e confiança. Buscamos evoluir constantemente, acompanhando
-          as transformações do mercado e oferecendo soluções que atendam às
-          necessidades dos nossos clientes. Queremos continuar crescendo sem
-          perder os valores que construímos ao longo de 50 anos, tornando a
-          Nexus uma empresa cada vez mais moderna, reconhecida e preparada para
-          os desafios do futuro.
-        </p>
-      </section>
-
     </main>
   );
 }
 
-export default SectionMission;
+export default SectionVision;
