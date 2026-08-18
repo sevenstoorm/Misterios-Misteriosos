@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import SobrePage from "./pages/SobrePage";
 import ProdutosPage from "./pages/ProdutosPage"
 import FaqPage from "./pages/FAQ/FaqPage";
+import NotFound from "./pages/404pages"
 
 import Contato from "./pages/Contato";
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/produtos" element={<ProdutosPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </main>
 
